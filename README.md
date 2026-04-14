@@ -69,16 +69,30 @@ You can adjust the number of robots by changing the value of `n_robots`.
 
 You can also modify `vehicleX_list` and `vehicleY_list` to specify the initial positions of the robots, where `vehicleX_list` defines the x-coordinates and `vehicleY_list` defines the y-coordinates.
 
+For additional parameter settings and further modifications, please refer to the **[CMU Autonomous Exploration Development Environment](https://www.cmu-exploration.com/development-environment)**
+
 ### 3. Visualization Examples
 
 The following figures show example interfaces after launching the simulation in Gazebo and RViz.
+
+#### Waypoint Tool Properties in RViz
 
 As shown below, different robots can be assigned waypoints by setting the corresponding `namespace` in the waypoint tool properties in RViz.
 <p align="center">
   <img src="showcases/tool_properties.png" alt="Waypoint tool properties in RViz" width="45%"/>
 </p>
 
-For additional parameter settings and further modifications, please refer to the **[CMU Autonomous Exploration Development Environment](https://www.cmu-exploration.com/development-environment)**
+#### RViz View
+An example RViz interface for multi-robot visualization is shown below.
+<p align="center"> 
+  <img src="showcases/indoor.png" alt="RViz visualization example" width="70%"/> 
+</p>
+
+#### Gazebo View
+An example Gazebo interface after launching the multi-robot simulation is shown below.
+<p align="center"> 
+  <img src="showcases/warehouse.png" alt="Gazebo visualization example" width="70%"/> 
+</p>
 
 ## Repository Structure
 
