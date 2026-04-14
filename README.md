@@ -61,7 +61,11 @@ ros2 launch vehicle_simulator system_environment.launch.py
 
 In `system_environment.launch.py`, you can enable vehicle visualization in Gazebo by modifying the value of `gazebo_gui`.
 
-You can also adjust the number of vehicles by changing the value of `n_robots`.
+You can adjust the number of robots by changing the value of `n_robots`.
+
+You can also modify `vehicleX_list` and `vehicleY_list` to specify the initial positions of the robots, where `vehicleX_list` defines the x-coordinates and `vehicleY_list` defines the y-coordinates.
+
+In RViz, waypoints can be assigned to different robots by setting the corresponding `namespace` in the waypoint tool properties
 
 For additional parameter settings and further modifications, please refer to the **[CMU Autonomous Exploration Development Environment](https://www.cmu-exploration.com/development-environment)**
 
