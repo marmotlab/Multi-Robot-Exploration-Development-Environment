@@ -65,7 +65,10 @@ You can adjust the number of robots by changing the value of `n_robots`.
 
 You can also modify `vehicleX_list` and `vehicleY_list` to specify the initial positions of the robots, where `vehicleX_list` defines the x-coordinates and `vehicleY_list` defines the y-coordinates.
 
-In RViz, waypoints can be assigned to different robots by setting the corresponding `namespace` in the waypoint tool properties
+As shown below, different robots can be assigned waypoints by setting the corresponding `namespace` in the waypoint tool properties in RViz.
+<p align="center">
+  <img src="showcases/tool_properties.png" alt="Waypoint tool properties in RViz" width="700"/>
+</p>
 
 For additional parameter settings and further modifications, please refer to the **[CMU Autonomous Exploration Development Environment](https://www.cmu-exploration.com/development-environment)**
 
