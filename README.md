@@ -67,7 +67,7 @@ You can also modify `vehicleX_list` and `vehicleY_list` to specify the initial p
 
 As shown below, different robots can be assigned waypoints by setting the corresponding `namespace` in the waypoint tool properties in RViz.
 <p align="center">
-  <img src="showcases/tool_properties.png" alt="Waypoint tool properties in RViz" width="700"/>
+  <img src="showcases/tool_properties.png" alt="Waypoint tool properties in RViz" width="45%"/>
 </p>
 
 For additional parameter settings and further modifications, please refer to the **[CMU Autonomous Exploration Development Environment](https://www.cmu-exploration.com/development-environment)**
