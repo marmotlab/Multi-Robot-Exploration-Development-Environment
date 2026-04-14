@@ -158,58 +158,6 @@ def generate_launch_description():
     declare_namespace = DeclareLaunchArgument('namespace', default_value='robot_X', description='')
 
     start_spawn = OpaqueFunction(function=spawn_entities)
-    
-
-    # start_vehicle_simulator = Node(
-    #   package='vehicle_simulator', 
-    #   executable='vehicleSimulator',
-    #   namespace=namespace,
-    #   parameters=[
-    #     {
-    #       'use_gazebo_time': False,
-    #       'sensorOffsetX': sensorOffsetX,
-    #       'sensorOffsetY': sensorOffsetY,
-    #       'vehicleHeight': vehicleHeight,
-    #       'cameraOffsetZ': cameraOffsetZ,
-    #       'vehicleX': vehicleX,
-    #       'vehicleY': vehicleY,
-    #       'vehicleZ': vehicleZ,
-    #       'terrainZ': terrainZ,
-    #       'vehicleYaw': vehicleYaw,
-    #       'terrainVoxelSize': terrainVoxelSize,
-    #       'groundHeightThre': groundHeightThre,
-    #       'adjustZ': adjustZ,
-    #       'terrainRadiusZ': terrainRadiusZ,
-    #       'minTerrainPointNumZ': minTerrainPointNumZ,
-    #       'smoothRateZ': smoothRateZ,
-    #       'adjustIncl': adjustIncl,
-    #       'terrainRadiusIncl': terrainRadiusIncl,
-    #       'minTerrainPointNumIncl': minTerrainPointNumIncl,
-    #       'smoothRateIncl': smoothRateIncl,
-    #       'InclFittingThre': InclFittingThre,
-    #       'maxIncl': maxIncl,
-    #       'use_sim_time': use_sim_time,
-    #       'robot_ns': namespace
-    #     }
-    #     ],
-    #     output='screen'
-    # )
-
-    # delayed_start_vehicle_simulator = TimerAction(
-    #   period=5.0,
-    #   actions=[
-    #     start_vehicle_simulator
-    #   ]
-    # )
-
-    start_vehicle_simulator = OpaqueFunction(function=launch_vehicle_simulator)
-
-    # delayed_start_vehicle_simulator = TimerAction(
-    #   period=5.0,
-    #   actions=[
-    #     start_vehicle_simulator
-    #   ]
-    # )
 
     ld = LaunchDescription()
 
