@@ -1,0 +1,1865 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+  <world name="default">
+  
+    <plugin name="ros_interface_plugin" filename="librotors_gazebo_ros_interface_plugin.so"/>
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so"/>
+    
+    <gravity>0 0 -9.8</gravity>
+    <physics default="0" name="default_physics" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- Ground -->
+    <include>
+      <uri>model://aws_robomaker_warehouse_GroundB_01</uri>
+      <pose>0 0 0 0 0 0</pose>
+      <scale>1 1 1</scale> 
+    </include>
+
+    <!-- <include>
+      <uri>model://ground_plane</uri>
+    </include> -->
+
+    <model name="aws_robomaker_warehouse_WallB_01_001">
+        <include>
+            <uri>model://aws_robomaker_warehouse_WallB_01</uri>
+        </include>
+        <pose frame="">0.0 0.0 0 0 0 0</pose>
+	  </model>
+
+
+    <model name="aws_robomaker_warehouse_ClutteringC_r1_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 -25.52 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r2_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 -23.76 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c6">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-21.63 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c16">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-1.03 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c31">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>29.87 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r3_c32">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>31.93 -22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c6">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-21.63 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c16">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-1.03 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r4_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 -20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r5_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 -18.48 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r5_c6">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-21.63 -18.48 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r5_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 -18.48 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r5_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 -18.48 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r6_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 -16.72 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r6_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 -16.72 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r6_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 -16.72 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r6_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 -16.72 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c1">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-31.93 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c2">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-29.87 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c11">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-11.33 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c12">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-9.27 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c27">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>21.63 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r7_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 -14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c1">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-31.93 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c2">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-29.87 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c27">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>21.63 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r8_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 -13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r9_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 -11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r9_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 -11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r9_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 -11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r9_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 -11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r9_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 -11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r9_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 -11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r10_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 -9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r10_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 -9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r10_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 -9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r10_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 -9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r10_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 -9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r10_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 -9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r11_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 -7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c21">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>9.27 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c22">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>11.33 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r12_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 -6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r13_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 -4.4 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r13_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 -4.4 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r13_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 -4.4 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r14_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 -2.64 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c6">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-21.63 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c7">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-19.57 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r15_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 -0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c1">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-31.93 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c2">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-29.87 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r16_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 0.88 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r17_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 2.64 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r18_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 4.4 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c21">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>9.27 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c22">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>11.33 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c31">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>29.87 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r19_c32">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>31.93 6.16 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r20_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 7.92 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r21_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r21_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r21_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r21_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r21_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r21_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r21_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 9.68 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r22_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r22_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r22_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r22_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 11.44 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c6">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-21.63 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c7">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-19.57 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r23_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 13.2 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c6">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-21.63 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c7">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-19.57 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c21">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>9.27 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c22">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>11.33 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r24_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 14.96 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r25_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 16.72 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r26_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 18.48 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c26">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>19.57 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c27">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>21.63 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r27_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 20.24 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c3">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-27.81 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c4">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-25.75 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c5">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-23.69 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c9">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-15.45 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c10">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-13.39 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c13">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-7.21 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c14">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-5.15 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c15">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-3.09 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c18">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>3.09 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c19">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>5.15 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c20">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>7.21 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c23">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>13.39 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c24">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>15.45 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c25">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>17.51 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c28">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>23.69 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c29">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>25.75 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r28_c30">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>27.81 22.0 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r29_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 23.76 0 0 0 1.5708</pose>
+      </include>
+    </model>
+    <model name="aws_robomaker_warehouse_ClutteringC_r30_c8">
+      <include>
+        <uri>model://aws_robomaker_warehouse_ClutteringC_01</uri>
+        <pose>-17.51 25.52 0 0 0 1.5708</pose>
+      </include>
+    </model>
+
+
+    <light name="Warehouse_CeilingLight_003" type="point">
+      <pose frame="">0 0 9 0 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>80</range>
+        <constant>0.3</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+      <direction>0.1 0.1 -1</direction>
+    </light>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>-4.70385 10.895 16.2659 -0 0.921795 -1.12701</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>
