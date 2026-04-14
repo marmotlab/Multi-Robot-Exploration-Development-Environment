@@ -125,7 +125,7 @@ def generate_launch_description():
     namespace = LaunchConfiguration('namespace')
     n_robots = LaunchConfiguration('n_robots')
 
-    declare_world_name = DeclareLaunchArgument('world_name', default_value='indoor', description='')
+    declare_world_name = DeclareLaunchArgument('world_name', default_value='campus', description='')
     declare_sensorOffsetX = DeclareLaunchArgument('sensorOffsetX', default_value='0.0', description='')
     declare_sensorOffsetY = DeclareLaunchArgument('sensorOffsetY', default_value='0.0', description='')
     declare_vehicleHeight = DeclareLaunchArgument('vehicleHeight', default_value='0.75', description='')
