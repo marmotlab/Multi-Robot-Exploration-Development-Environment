@@ -32,9 +32,11 @@ For the compilation and environment setup process, please refer to the following
 
 After completing the environment setup and compilation, you can launch the corresponding simulation and exploration modules based on your experiment configuration.
 
+### 1. Environment Categories
+
 This repository supports two categories of environments:
 
-### 1. Exploration Environments
+#### Exploration Environments
 
 The original five environments are preserved for exploration task testing and evaluation:
 
@@ -44,7 +46,7 @@ The original five environments are preserved for exploration task testing and ev
 - `tunnel`
 - `forest`
 
-### 2. Warehouse Environment
+#### Warehouse Environment
 
 In addition to the original exploration environments, this repository introduces a `warehouse` environment for multi-robot cooperative navigation tasks.
 
@@ -52,6 +54,8 @@ The warehouse setup includes:
 
 - a **prior** environment with relatively simple obstacle distribution
 - a **ground truth** environment with local changes
+
+### 2. Launch Instructions
 
 To launch the system with a particular environment, replace `environment` with the desired environment name, such as `campus`, `indoor`, `garage`, `tunnel`, `forest`, or `warehouse`.
 
@@ -64,6 +68,10 @@ In `system_environment.launch.py`, you can enable vehicle visualization in Gazeb
 You can adjust the number of robots by changing the value of `n_robots`.
 
 You can also modify `vehicleX_list` and `vehicleY_list` to specify the initial positions of the robots, where `vehicleX_list` defines the x-coordinates and `vehicleY_list` defines the y-coordinates.
+
+### 3. Visualization Examples
+
+The following figures show example interfaces after launching the simulation in Gazebo and RViz.
 
 As shown below, different robots can be assigned waypoints by setting the corresponding `namespace` in the waypoint tool properties in RViz.
 <p align="center">
